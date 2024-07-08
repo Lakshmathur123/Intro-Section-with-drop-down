@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+--Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: var(--Almost-White);
+    color: var(--Medium-Gray);
+}
+
+header {
+    background-color: var(--Almost-White);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--Almost-White);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 24px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.auth-button a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--Almost-Black);
+    background-color: var(--Almost-White);
+    font-size: 16px;
+    border: 1px solid var(--Almost-White);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.auth-button .register {
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    border: 2px solid var(--Almost-Black);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--Almost-White);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 16px;
+}
+
+.dropdown-content a {
+    color: var(--Medium-Gray);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: var(--Almost-Black);
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--Medium-Gray);
+    
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var(--Almost-Black);
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.clients {
+    background-color: var(--Almost-White);
+    padding: 20px 0;
+    border-top: 1px solid var(--Almost-White);
+}
+
+.banners {
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+
+}
+
+
+
+
+
+
+
+
