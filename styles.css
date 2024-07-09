@@ -2,16 +2,15 @@
 
 :root {
     --Almost-White: hsl(0, 0%, 98%);
---Medium-Gray: hsl(0, 0%, 41%);
---Almost-Black: hsl(0, 0%, 8%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
 }
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
 
 body {
     background-color: var(--Almost-White);
@@ -24,36 +23,51 @@ header {
     border-bottom: 1px solid var(--Almost-White);
 }
 
-.container {
+nav {
     width: 80%;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-inline: 4rem;
+}
+
 .logo img {
-    height: 24px; 
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
+    gap: 2.5rem;
 }
 
 nav ul li {
     position: relative;
-    margin-left: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
-    font-size: 16px;
+    color: var(--Medium-Gray);
+    font-size: 18px;
+   margin-left: 2rem;
+   align-items: center;
+}
+
+.auth-button {
+    display: flex;
+    gap: 1rem;
 }
 
 .auth-button a {
-    margin-left: 20px;
     text-decoration: none;
     color: var(--Almost-Black);
     background-color: var(--Almost-White);
@@ -75,7 +89,7 @@ nav ul li a {
     background-color: var(--Almost-White);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    min-width: 16px;
+    min-width: 160px;
 }
 
 .dropdown-content a {
@@ -107,10 +121,9 @@ nav ul li a {
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
     color: var(--Medium-Gray);
-    
 }
 
 .learn-more {
@@ -135,16 +148,7 @@ nav ul li a {
 }
 
 .banners {
- display: flex;
- align-items: center;
- justify-content: space-evenly;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-
-
-
-
-
-
-
-
